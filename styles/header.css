@@ -84,24 +84,20 @@
     padding: 8px 16px;
 }
 
-.clear {
+/* .clear {
     clear: both;
-}
+} */
 
 @media (min-width: 655px) {
     .site-header {
-        text-align: left;
+        text-align: center;
     }
     
     .site-header .text-container {
-        float: left;
-        max-width: 40%;
         margin-top: 20px;
     }
     
     .site-header nav {
-        float: right;
-        max-width: 50%;
         margin-top: 20px;
     }
     
