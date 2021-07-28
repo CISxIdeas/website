@@ -77,14 +77,20 @@ hr {
 }
 
 .table-container {
-    overflow-x: auto;
+    overflow: auto;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--separator-color);
 }
 
 table {
-    /*    background-color: var(--elevated-background-color);*/
-    border-collapse: collapse;
+    background-color: var(--elevated-background-color);
     text-align: left;
-    border-radius: 10px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
 }
 
 table + h1, table + h2 {
@@ -92,6 +98,7 @@ table + h1, table + h2 {
 }
 
 th, td {
+    width: 33.33%;
     border-width: 2px;
     border-style: solid;
     border-color: var(--separator-color);
