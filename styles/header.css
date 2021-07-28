@@ -79,7 +79,7 @@
 
 .site-header nav li.selected a {
     font-weight: 600;
-    background-color: var(--elevated-background-color);
+    background-color: var(--elevated-selected-background-color);
     border-radius: 8px;
     padding: 8px 16px;
 }
