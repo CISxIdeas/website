@@ -103,6 +103,10 @@
 
 /* Hero Images */
 
+.fas {
+    vertical-align: baseline;
+}
+
 .hero-image {
     /*    max-width: 25%;*/
     max-height: 350px;
@@ -128,6 +132,11 @@
     margin-left: auto;
     margin-right: auto;
     float: none;
+}
+
+.sponsor-container {
+    display: flex;
+    align-items: center;
 }
 
 .hero-image.sponsor {
