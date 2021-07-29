@@ -153,13 +153,18 @@ a .hero-image.sponsor {
 }
 
 .hero-image.staff {
-    height: auto;
-    max-height: 130px;
-    max-width: 130px;
+    height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     float: none;
     border-radius: 1000px;
+}
+
+.staff-container {
+    max-height: 130px;
+    max-width: 130px;
+    height: auto;
 }
 
 .hero-image.right {
