@@ -285,6 +285,10 @@ figcaption {
         margin-right: auto;
         float: none;
     }
+
+    .sponsor-container {
+        display: block;
+    }
     
     .hero-image.full-limited {
         max-width: 50%;
