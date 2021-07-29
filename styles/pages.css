@@ -154,8 +154,8 @@ a .hero-image.sponsor {
 
 .hero-image.staff {
     height: auto;
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 130px;
+    max-width: 130px;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -284,6 +284,12 @@ figcaption {
         margin-left: auto;
         margin-right: auto;
         float: none;
+    }
+
+    .staff-container {
+        display: block;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .sponsor-container {
