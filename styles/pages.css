@@ -153,8 +153,9 @@ a .hero-image.sponsor {
 }
 
 .hero-image.staff {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    max-height: 150px;
+    max-width: 150px;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -163,9 +164,6 @@ a .hero-image.sponsor {
 
 .staff-container {
     display: inline-block;
-    max-height: 150px;
-    max-width: 150px;
-    height: auto;
 }
 
 .hero-image.right {
