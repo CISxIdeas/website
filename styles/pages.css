@@ -162,6 +162,7 @@ a .hero-image.sponsor {
 }
 
 .staff-container {
+    display: inline-block;
     max-height: 130px;
     max-width: 130px;
     height: auto;
