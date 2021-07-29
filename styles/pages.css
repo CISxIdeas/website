@@ -294,8 +294,8 @@ figcaption {
 
     .staff-container {
         display: block;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .sponsor-container {
