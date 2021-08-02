@@ -296,7 +296,8 @@ figcaption {
 }
 
 .grid .item img {
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 /* Media Queries */
