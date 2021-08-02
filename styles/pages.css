@@ -291,13 +291,13 @@ figcaption {
     float: left;
     width: 32%;
     padding: 20px;
-    border-radius: 50px;
     margin-bottom: 25px;
 }
 
 .grid .item img {
     height: 100%;
     width: 100%;
+    border-radius: 50px;
 }
 
 /* Media Queries */
