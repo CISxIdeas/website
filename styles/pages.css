@@ -277,6 +277,12 @@ figcaption {
     align-items: stretch;
 }
 
+.grid:after {
+    display: block;
+    width: 32%;
+    content: "";
+}
+
 .grid .item {
     min-height: 100%;
     display: flex;
@@ -284,7 +290,7 @@ figcaption {
     float: left;
     width: 32%;
     padding: 20px;
-    border-radius: 28px;
+    border-radius: 50px;
     margin-bottom: 25px;
 }
 
