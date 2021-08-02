@@ -279,7 +279,7 @@ figcaption {
 
 .grid:after {
     display: block;
-    width: 32%;
+    width: 28%;
     content: "";
 }
 
@@ -289,7 +289,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     float: left;
-    width: 32%;
+    width: 28%;
     margin-bottom: 25px;
 }
 
