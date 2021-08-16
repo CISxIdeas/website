@@ -1,167 +1,129 @@
-.monospacedFont {
+.monospaced {
     font-family: "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 /* Font Sizes */
 
-h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 34px;
-    font-weight: 700;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
 
-h3 {
-    font-size: 28px;
-    font-weight: 600;
+.secondary {
+    color: var(--secondary-color);
 }
 
-.fontSize, .fontSize.base {
+.font-body {
     font-size: 18px
 }
 
-.fontSize.footer {
+.font-caption {
     font-size: 16px
 }
 
-.fontSize.metadata {
-    font-size: 18px
+.font-footnote {
+    font-size: 17px
 }
 
-.fontSize.sosumi {
-    font-size: 12px
+.font-subheadline {
+    font-size: 19px
 }
 
-.fontSize.legal {
-    font-size: 14px
+.font-title4 {
+    font-size: 22px;
+    line-height: 1.5em;
 }
 
-.fontSize.siteDescription {
-    font-size: 20px
+.font-title3 {
+    font-size: 26px;
+    line-height: 1.5em;
 }
 
-.fontSize.large {
-    font-size: 22px
+.font-title2 {
+    font-size: 28px;
+    font-weight: 500;
 }
 
-.fontSize.postExcerptTitle, .fontSize.secondarySectionTitle {
-    font-size: 30px
+.font-title {
+    font-size: 32px;
+    font-weight: 700;
 }
 
-.fontSize.sectionTitle {
-    font-size: 34px
+.font-sectionTitle {
+    font-size: 50px
 }
 
-.fontSize.siteTitle {
-    font-size: 38px
+.font-largeTitle {
+    font-size: 60px
 }
 
-.fontSize.pageTitle {
-    font-size: 42px
-}
-
-.fontSize.largeTitle {
-    font-size: 70px
-}
-
-@media(max-width: 1024px) {
-    h1 {
-        font-size: 28px;
-    }
-    
-    h2 {
-        font-size: 22px;
-    }
-    
-    .fontSize.metadata {
-        font-size: 16px
-    }
-    
-    .fontSize.large {
-        font-size: 18px
-    }
-    
-    .fontSize.postExcerptTitle, .fontSize.secondarySectionTitle {
-        font-size: 26px
-    }
-    
-    .fontSize.sectionTitle {
-        font-size: 32px
-    }
-    
-    .fontSize.postTitle {
-        font-size: 34px
-    }
+.font-largerTitle {
+    font-size: 80px
 }
 
 @media(max-width: 655px) {
-    html, .fontSize, .fontSize.base {
+    html, .font-base {
         font-size: 15px
     }
-    
-    .fontSize.siteDescription {
+    .font-caption {
+        font-size: 11px
+    }
+    .font-footnote {
+        font-size: 16px
+    }
+    .font-subheadline {
+        font-size: 17px
+    }
+    .font-title3, .font-title4 {
         font-size: 18px
     }
-    
-    .fontSize.siteTitle {
+    .font-title2 {
+        font-size: 20px
+    }
+    .font-title {
+        font-size: 26px
+    }
+    .font-largeTitle, .font-sectionTitle {
         font-size: 32px
     }
-    
-    .fontSize.postTitle {
-        font-size: 28px
-    }
-
-    .fontSize.largeTitle {
-        font-size: 54px
+    .font-largerTitle {
+        font-size: 40px
     }
 }
 
 /* Font Weights */
 
-.fontWeight {
-    font-weight: 400
-}
-
-.fontWeight.ultraLight {
+.ultraLight {
     font-weight: 100
 }
 
-.fontWeight.thin {
+.thin {
     font-weight: 200
 }
 
-.fontWeight.light {
+.light {
     font-weight: 300
 }
 
-.fontWeight.regular {
-    font-weight: 400 /* normal */
+.regular {
+    font-weight: 400/* normal */
 }
 
-.fontWeight.medium {
+.medium {
     font-weight: 500
 }
 
-.fontWeight.semibold {
+.semibold {
     font-weight: 600
 }
 
-.fontWeight.bold {
-    font-weight: 700 /* bold */
+.bold {
+    font-weight: 700/* bold */
 }
 
-.fontWeight.heavy {
+.heavy {
     font-weight: 800
 }
 
-.fontWeight.black {
+.black {
     font-weight: 900
 }
-

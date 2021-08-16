@@ -20,15 +20,17 @@
         <link rel="stylesheet" href="../styles/footer.css" type="text/css"/>
         <link rel="stylesheet" href="../styles/header.css" type="text/css"/>
         <link rel="stylesheet" href="../styles/pages.css" type="text/css"/>
+        <link rel="stylesheet" href="../styles/schedule.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+        <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     </head>
     <body>
         <header class="site-header">
             <div class="wrapper">
                 <div class="text-container">
-                    <a href=".." class="site-name fontSize siteTitle fontWeight bold" href="/">CISxIdeas</a>
-                    <p class="site-description fontSize siteDescription fontWeight semibold">A free online hackathon for secondary students</p>
+                    <a href=".." class="site-name font-title bold" href="/">CISxIdeas</a>
+                    <p class="site-description font-subheadline semibold">A free online hackathon for secondary students</p>
                 </div>
                 <nav style="display: block">
                     <ul>
@@ -81,58 +83,513 @@
         </header>
         <div class="wrapper content">
             <div class="page-content">
-                <h1 class="page-title fontSize siteTitle fontWeight heavy" style="margin-bottom: 20px">
-                    <i class="fas fa-calendar-alt fa-fw"></i>
+                <h1 class="page-title font-sectionTitle heavy center">
                     Schedule
                 </h1>
 
-                <p class="fontSize large" style="margin-top: 0;color: var(--secondary-color)">
-                    <i>
-                        A more detailed schedule will be available soon
-                    </i>
-                </p>
+                <div class="quick-access center">
+                    <a class="font-footnote semibold scroll" href="#day1">Day 1</a>
+                    <a class="font-footnote semibold scroll" href="#day2">Day 2</a>
+                    <a class="font-footnote semibold scroll" href="#day3">Day 3</a>
+                    <a class="font-footnote semibold scroll" href="#day4">Day 4</a>
+                    <a class="font-footnote semibold scroll" href="#day5">Day 5</a>
+                    <a class="font-footnote semibold scroll" href="#day6">Day 6</a>
+                    <a class="font-footnote semibold scroll" href="#day7">Day 7</a>
+                    <a class="font-footnote semibold scroll" href="#day8">Day 8</a>
+                    <a class="font-footnote semibold scroll" href="#day9">Day 9</a>
+                </div>
 
-                <p class="uppercase" style="margin-bottom: 0">
-                    Saturday, November 13
-                </p>
-                <p class="fontSize large fontWeight semibold" style="margin-bottom: 20px">
-                    Keynote & Workshops
-                </p>
+                <div class="schedule">
+                    <div class="header" id="day1" style="margin-top: 20px;">
+                        <p class="font-title3 semibold">
+                            Saturday, November 13
+                        </p>
+                    </div>
 
-                <p class="uppercase" style="margin-bottom: 0">
-                    Sunday, November 14
-                </p>
-                <p class="fontSize large fontWeight semibold" style="margin-bottom: 20px">
-                    Workshops
-                </p>
+                    <div class="block hidden" id="block0" onclick="show('block0')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                9:00—9:15 AM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Opening Remarks
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                CISxIdeas Team
+                            </p>
+                            <p class="sub font-subheadline">
 
-                <p class="uppercase" style="margin-bottom: 0">
-                    November 15—19
-                </p>
-                <p class="fontSize large fontWeight semibold" style="margin-bottom: 20px">
-                    Project Work Time
-                </p>
+                            </p>
+                        </div>
+                    </div>
 
-                <p class="uppercase" style="margin-bottom: 0">
-                    Saturday, November 20
-                </p>
-                <p class="fontSize large fontWeight semibold" style="margin-bottom: 20px">
-                    Workshops & Discussions
-                </p>
+                    <div class="block hidden" id="block1" onclick="show('block1')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                9:15—10:00 AM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Keynote Speeches
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Microsoft, KidsForSDGs, and Teach for Hong Kong
+                            </p>
+                            <p class="sub font-subheadline">
 
-                <p class="uppercase" style="margin-bottom: 0">
-                    Sunday, November 21
-                </p>
-                <p class="fontSize large fontWeight semibold" style="margin-bottom: 20px">
-                    Final Submissions
-                </p>
+                            </p>
+                        </div>
+                    </div>
 
-                <p class="uppercase" style="margin-bottom: 0">
-                    Sunday, November 28
-                </p>
-                <p class="fontSize large fontWeight semibold" style="margin-bottom: 20px">
-                    Awards Ceremony
-                </p>
+                    <div class="block hidden" id="block2" onclick="show('block2')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                10:00—11:00 AM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Teach for Hong Kong Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Teach for Hong Kong
+                            </p>
+                            <p class="sub font-subheadline">
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block3" onclick="show('block3')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                11:30—12:30 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                <!-- Speech (name?) -->
+                                <i>🍦 Thank You Froyo Patience</i>
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                <!-- Jelani Nelson -->
+                                🏔 This is only meant to peak your interest
+                            </p>
+                            <p class="sub font-subheadline">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block4" onclick="show('block4')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                1:30—3:30 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Design Thinking Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Derek Seto
+                            </p>
+                            <p class="sub font-subheadline">
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block5" onclick="show('block5')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                4:00—5:00 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                EdTech Sharing
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Viola Lam & Cyberport
+                            </p>
+                            <p class="sub font-subheadline">
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block6" onclick="show('block6')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                5:00—6:30 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Minecraft & Roblox Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                COBO Academy
+                            </p>
+                            <p class="sub font-subheadline">
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block7" onclick="show('block7')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                6:30—6:45 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Closing Remarks
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Edwin Lagos, Chinese International School
+                            </p>
+                            <p class="sub font-subheadline">
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header" id="day2">
+                        <p class="font-title3 semibold">
+                            Sunday, November 14
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block8" onclick="show('block8')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                8:30—10:30 AM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Microsoft Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Microsoft
+                            </p>
+                            <p class="sub font-subheadline">
+                                Find out more about the cloud computing systems and Microsoft’s Azure cognitive services. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block9" onclick="show('block9')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                11:00—12:30 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                PowerApps Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Microsoft & COBO Academy
+                            </p>
+                            <p class="sub font-subheadline">
+                                Learn to build your own custom app for your hackathon solution! 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block10" onclick="show('block10')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                1:30—2:30 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Squarespace Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                <i>Coming Soon</i>
+                            </p>
+                            <p class="sub font-subheadline">
+                                A website building workshop using squarespace. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block11" onclick="show('block11')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                3:00—4:00 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Thunkable Workshop
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                <i>Coming Soon</i>
+                            </p>
+                            <p class="sub font-subheadline">
+                                The simple way to build an app, the Thunkable workshop will teach you how without any coding. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block12" onclick="show('block12')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                4:00—5:00 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                App In An Hour: Introduction to SwiftUI
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Julian Schiavo, Chinese International School
+                            </p>
+                            <p class="sub font-subheadline">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block13" onclick="show('block13')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                6:15—6:30 PM
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Closing Remarks
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                <i>Coming Soon</i>
+                            </p>
+                            <p class="sub font-subheadline">
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="header" id="day3">
+                        <p class="font-title3 semibold">
+                            Monday, November 15
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block14" onclick="show('block14')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Work Time & Mentorship Sessions
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block15" onclick="show('block15')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                World Antibiotics Awareness Week
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Justin Kim, Chinese International School
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header" id="day4">
+                        <p class="font-title3 semibold">
+                            Tuesday, November 16
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block16" onclick="show('block16')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Work Time & Mentorship Sessions
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block17" onclick="show('block17')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                International Tolerance Day
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header" id="day5">
+                        <p class="font-title3 semibold">
+                            Wednesday, November 17
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block18" onclick="show('block18')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Work Time & Mentorship Sessions
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="header" id="day6">
+                        <p class="font-title3 semibold">
+                            Thursday, November 18
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block19" onclick="show('block19')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Work Time & Mentorship Sessions
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block20" onclick="show('block20')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                World Philosophy Day
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header" id="day7">
+                        <p class="font-title3 semibold">
+                            Friday, November 19
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block21" onclick="show('block21')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                Work Time & Mentorship Sessions
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block hidden" id="block22" onclick="show('block22')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                All Day
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                World Toilet Day
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                Justin Kim, Chinese International School
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header" id="day8">
+                        <p class="font-title3 semibold">
+                            Saturday, November 20
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block23" onclick="show('block23')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                <i>🚣 Canoe keep a secret? We can.</i>
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                🐨 You just aren’t koalafied to know yet.
+                            </p>
+                            <p class="sub font-subheadline">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header" id="day9">
+                        <p class="font-title3 semibold">
+                            Sunday, November 21
+                        </p>
+                    </div>
+
+                    <div class="block hidden" id="block24" onclick="show('block24')">
+                        <div class="header">
+                            <p class="font-caption secondary monospaced">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p class="font-title4 semibold">
+                                <i>🙃 You’ll flip when this is revealed.</i>
+                            </p>
+                            <p class="sub font-subheadline secondary">
+                                🕶 Sorry to be shady about this.
+                            </p>
+                            <p class="sub font-subheadline">
+                                <i>Coming Soon</i>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="section" style="background-color: var(--elevated-background-color)">
@@ -145,7 +602,7 @@
             </div>
         </div>
         <footer style="border-top: none; background-color: initial">
-            <div class="wrapper fontSize footer" style="padding-top: 40px; padding-bottom: 40px; width: initial; max-width: none;">
+            <div class="wrapper font-caption" style="padding-top: 40px; padding-bottom: 40px; width: initial; max-width: none;">
                 <img src="/images/cis.png" style="max-width: 80px" />
                 <div class="social-icons">
                     <a class="social-icon" href="https://instagram.com/cisxideas"><i class="fab fa-instagram"></i></a>
@@ -154,5 +611,46 @@
                 <p>© 2021 CISxIdeas & Chinese International School. All rights reserved.</p>
             </div>
         </footer>
+
+        <script>
+            function show(name) {
+                var blocks = document.getElementsByClassName("block");
+                var i;
+                for (i = 0; i < blocks.length; i++) {
+                    var block = blocks[i];
+                    if (!block.classList.contains('hidden') && !block.id == name) {
+                        block.classList.add('hidden');
+                    }
+                }
+
+                document.getElementById(name).classList.toggle("hidden");
+            }
+
+            function scrollTo() {
+                const links = document.querySelectorAll('.scroll');
+                links.forEach(each => (each.onclick = scrollAnchors));
+            }
+
+            function scrollAnchors(e, respond = null) {
+                const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+                e.preventDefault();
+                var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+                const targetAnchor = document.querySelector(targetID);
+                if (!targetAnchor) return;
+                const originalTop = distanceToTop(targetAnchor) - 50;
+                window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+                const checkIfDone = setInterval(function () {
+                    const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+                    if (distanceToTop(targetAnchor) === 0 || atBottom) {
+                        targetAnchor.tabIndex = '-1';
+                        targetAnchor.focus();
+                        // window.history.pushState('', '', targetID);
+                        clearInterval(checkIfDone);
+                    }
+                }, 100);
+            }
+
+            scrollTo();
+        </script>
     </body>
 </html>

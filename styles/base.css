@@ -16,6 +16,7 @@ html {
     font-family: "Avenir Next", "Avenir", -apple-system, -apple-system-font, system-ui, "SF Pro Display", BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
     font-size: 17px;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +39,10 @@ body {
 .content {
     flex: 1;
     margin-bottom: 40px;
+}
+
+.center {
+    text-align: center;
 }
 
 .section-title {
