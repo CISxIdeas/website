@@ -128,7 +128,7 @@
 .hero-image.full-limited {
     height: auto;
     max-height: 100%;
-    max-width: 200px;
+    max-width: 150px;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -137,19 +137,20 @@
 .sponsor-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-image.sponsor {
     height: auto;
-    max-height: 120px;
-    max-width: 280px;
+    max-height: 80px;
+    max-width: 240px;
     margin-left: auto;
     margin-right: auto;
     float: none;
 }
 
 a .hero-image.sponsor {
-    margin: 40px;
+    margin: 30px;
 }
 
 .hero-image.staff {
@@ -268,6 +269,120 @@ figcaption {
     text-align: center;
 }
 
+/* Cards */
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    -webkit-overflow-scrolling: touch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .card-list:after {
+    display: block;
+    width: 28%;
+    content: "";
+} */
+
+.card {
+    cursor: pointer;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 49%;
+    margin-bottom: 25px;
+
+    background-color: var(--elevated-background-color);
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+    transition: all .3s cubic-bezier(0, 0, .5, 1);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card:hover {
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .16);
+    transform: scale3d(1.02, 1.02, 1.02);
+    background-color: var(--elevated-selected-background-color);
+}
+
+.card .content {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.card.large {
+    width: 100%;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+/* .card.register {
+    background-color: #510816;
+}
+
+.card.register:hover {
+    background-color: #650a1c;
+} */
+
+.card.sessions {
+    background-color: #510816;
+}
+
+.card.sessions:hover {
+    background-color: #650a1c;
+}
+
+.card.prizes {
+    background-color: #412d0b;
+}
+
+.card.prizes:hover {
+    background-color: #563d0f;
+}
+
+.card.challenges {
+    background-color: #0c3e34;
+}
+
+.card.challenges:hover {
+    background-color: #0f4d41;
+}
+
+.card.team {
+    background-color: #1f3340;
+}
+
+.card.team:hover {
+    background-color: #243b49;
+}
+
+.card.faq {
+    background-color: #0f2432;
+}
+
+.card.faq:hover {
+    background-color: #17374b;
+}
+
 /* Grid */
 
 .grid {
@@ -334,6 +449,8 @@ figcaption {
     .hero-image.sponsor {
         display: block;
         margin: auto !important;
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
     }
     
     .hero-image.full-limited {
@@ -355,6 +472,20 @@ figcaption {
         width: 100%;
         margin-bottom: 10px;
         padding: 15px;
+    }
+
+    .card-list {
+        display: block;
+    }
+
+    .card {
+        display: block;
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 5px;
+        float: none;
     }
     
 }
