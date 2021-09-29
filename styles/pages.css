@@ -315,6 +315,13 @@ figcaption {
     background-color: var(--elevated-selected-background-color);
 }
 
+.card.disabled:hover {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+    transform: initial;
+    background-color: var(--elevated-background-color);
+    cursor: default;
+}
+
 .card .content {
     margin: auto;
     padding: 20px;
